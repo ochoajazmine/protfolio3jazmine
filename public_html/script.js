@@ -5,9 +5,11 @@
  */
 
 $("document").ready(function(){
-    $(".you").css("background-color", "yellow");
+    $(".you").css("background-color", "pink");
     
-    $("div:nth-child(1)").css("background-color","pink");
+    $('p:nth-child(3)').css('color','blue');
+    
+    $('p:nth-child(2)').css('color','red');
+    
+    
 });
-
-
