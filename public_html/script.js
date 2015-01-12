@@ -11,5 +11,13 @@ $("document").ready(function(){
     
     $('p:nth-child(2)').css('color','red');
     
-    
+     $("h1").bind('mouseover',mouseOverMe).bind('mouseout',mouseOutMe);
 });
+
+function mouseOverMe() {
+    $("h1").html("hi");
+}
+
+function mouseOutMe () {
+    $('h1').html("hello");
+}
