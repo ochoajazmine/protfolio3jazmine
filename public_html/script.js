@@ -12,7 +12,26 @@ $("document").ready(function(){
     $('p:nth-child(2)').css('color','red');
     
      $("h1").bind('mouseover',mouseOverMe).bind('mouseout',mouseOutMe);
-});
+     
+     $('#replceWText').bind('click',replaceWText);
+     
+     $('#randPara').bind('click',addAPara);
+     
+     $('#removePara').bind('click',removeApara);
+    
+     });
+     
+     function removeApara(){
+         $('#randPara p:last').remove();
+     }
+     
+     function addAPara () {
+         $('#randPara').append('<p>ADDED</p>');
+     }
+     
+     function replaceWText(){
+         $('replaceWText'),text('replaced!');
+     }
 
 function mouseOverMe() {
     $("h1").html("hi");
